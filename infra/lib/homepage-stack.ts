@@ -124,6 +124,7 @@ export class HomepageStack extends cdk.Stack {
       zone,
       recordName: 'www',
       target: route53.RecordTarget.fromAlias(new targets.CloudFrontTarget(distribution)),
+      deleteExisting: true,
     })
 
     // ── SES identity (domain) ────────────────────────────────────────────────
