@@ -1,0 +1,8 @@
+**/.next
+**/node_modules
+**/.turbo
+**/dist
+infra/cdk.out
+**/.env
+**/.env.local
+*.pem
